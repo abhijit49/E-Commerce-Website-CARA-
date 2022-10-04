@@ -551,8 +551,7 @@ footer .copyright{
 
 /* Cart Page*/
 
-/* Start Media Query
-*/
+/* Start Media Query*/
 
 @media (max-width:799px) {
     #navbar {
@@ -560,7 +559,7 @@ footer .copyright{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: fixed;
+        
         top: 0;
         right: -300px;
         height: 100vh;
