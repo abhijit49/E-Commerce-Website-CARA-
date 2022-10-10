@@ -68,7 +68,7 @@ button.white{
 }
 
 body{
-    width: 100%;
+        width: 100%;
 }
 
 /* Header Start*/
@@ -126,13 +126,19 @@ body{
     display: none;
     align-items: center;
 }
-/* Home Page*/
 
+
+#close{
+    display: none;
+}
+
+/* Home Page*/
+ 
 #hero{
-    background-image: url("img/hero4.png");
+    background-image: url("img/hero4.png") ;
     height: 90vh;
     width: 100%;
-    background-size: cover;
+    background-size: cover;    
     background-position: top 25% right 0;
     padding: 0 80px;
     display: flex;
@@ -155,7 +161,7 @@ body{
     color: #088178;
     border: 0;
     padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
@@ -334,6 +340,7 @@ body{
 #sm-banner{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 
 }
 #sm-banner .banner-box{
@@ -347,11 +354,15 @@ body{
     background-size: cover;
     background-position: center;
     padding: 30px;
+    position: relative;
 }
+
 
 #sm-banner .banner-box2{
     background-image: url(img/banner/b10.jpg);
 }
+
+
 #sm-banner h4{
     color: #fff;
     font-size: 20px;
@@ -537,6 +548,10 @@ footer .copyright{
 }
 
 
+
+
+
+
 /* Shop Page*/
 
 
@@ -558,6 +573,9 @@ footer .copyright{
 */
 
 @media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -572,7 +590,7 @@ footer .copyright{
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
     }
-
+  
     #navbar.active{
         right: 0px;
     }
@@ -586,11 +604,73 @@ footer .copyright{
         align-items: center;
     }
 
-    #mobile i{
+    #mobile i,a{
         color: #1a1a1a;
         font-size: 24px;
         padding-left: 20px;
     }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    
+    #lg-bag{
+        display: none;
+    }
+    
+    #hero{
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature{
+        justify-content:center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 20px;
+    }
+
+    #banner {
+        height: 25vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+       
+        width: 28%;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
 }
 
 
+@media (max-width:477px){
+    
+
+    
+}
