@@ -553,24 +553,337 @@ footer .copyright{
 
 
 /* Shop Page*/
+#page-header{
+    background-image: url(img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2, #page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
 
 
 /* Single Product*/
+
+#prodetails{
+    display: flex;
+    margin-top: 20px
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 20px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
 
 
 /* Blog page*/
 
 
-/* About Page/
+#page-header.blog-header{
+    background-image: url(img/banner/b19.jpg);
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+}
+
+#blog .blog-details a:hover::after{
+    background-color: #088178   ;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    font-style: italic;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -1;
+}
 
 
-/* Contact Page/
+/* About Page*/
+#page-header.about-header{
+    background-image: url("img/about/banner.png");
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+
+/* Contact Page*/
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 50px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;    
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+
+
+
+
 
 
 /* Cart Page*/
 
-/* Start Media Query
-*/
+/* Start Media Query*/
 
 @media (max-width:799px) {
     .section-p1 {
@@ -624,7 +937,7 @@ footer .copyright{
     }
     
     #hero{
-        height: 90vh;
+        height: 70vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
     }
@@ -666,11 +979,169 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+
+    /* contact page  */
+
+    #form-details {
+        padding: 30px;
+    }
+    #form-details form {
+        width: 50%;
+    }
+   
 }
 
 
-@media (max-width:477px){
-    
 
+/* max-width:477px */
+
+@media (max-width:477px){
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+       }
     
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;       
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin:0 0 15px 0;
+    }
+    #feature {
+        justify-content: space-around;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    #newsletter {
+      padding: 40px 20px;
+    }
+    footer .copyright {
+       text-align:start;
+    }
+
+    /* SIngle product */
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+       margin-right: 0px;
+    }
+    #prodetails .single-pro-details {
+        width: 100%;
+        padding: 2em;
+    }
+
+    /* blog page */
+
+    #page-header {
+        background-image: url(img/banner/b1.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        display: flex;
+        text-align: center;
+        justify-content: center;        
+        padding: 14px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+        padding-bottom: 90px;
+    }
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+
+    /* about page  */
+    
+    #about-head {
+       flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
+    /* contact page  */
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
 }
