@@ -6,6 +6,10 @@
     font-family: 'Spartan',sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -166,6 +170,31 @@ body{
     font-weight: 700;
     font-size: 15px;
 }
+
+.to-top {
+    background: rgb(219, 45, 45);
+    position: fixed;
+    bottom: 16px;
+    right:29px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
 
 #feature{
     display: flex;
