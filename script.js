@@ -12,3 +12,15 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+/* Bottom to Top button */
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if(window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    }else{
+        toTop.classList.remove("active");
+    }
+})
