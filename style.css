@@ -917,14 +917,58 @@ footer .copyright{
 }
 
 
-
-
-
-
-
-
-
-/* Cart Page*/
+/* Cart Page (cart items details)*/
+.small-container{
+    padding: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(6, 85, 103);
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: rgb(6, 85, 103);
+    font-size: 12px;
+    text-decoration: none;
+}
+td img{
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid rgb(6, 85, 103);
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 /* Start Media Query*/
 
@@ -1184,6 +1228,10 @@ footer .copyright{
     #form-details form {
         width: 100%;
         margin-bottom: 30px;
+    }
+    
+    .cart-info p{
+        display: none;
     }
     
     .to-top{                  
