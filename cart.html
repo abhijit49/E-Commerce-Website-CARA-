@@ -54,13 +54,14 @@
 
     <!-- cart items details-->
     <div class="small-container">
-      <table>
+     <table>
         <tr>
           <th>Product</th>
           <th>Quantity</th>
           <th>Subtotal</th>
         </tr>
-        <tr>
+      <div class="cart-rows-div">
+        <tr class="cart-row">
           <td>
             <div class="cart-info">
               <img src="img/products/f1.jpg" alt="Tshirt" />
@@ -68,14 +69,14 @@
                 <p>Orange Printed Tshirt</p>
                 <small>Price: $78.00</small>
                 <br />
-                <a href="#">Remove</a>
+                <button class="remove">Remove</a></button>
               </div>
             </div>
           </td>
-          <td><input type="number" value="1" /></td>
-          <td>$78.00</td>
+          <td><input class="quantity" type="number" value="1" /></td>
+          <td class="price">$78.00</td>
         </tr>
-        <tr>
+        <tr class="cart-row">
           <td>
             <div class="cart-info">
               <img src="img/products/f3.jpg" alt="Tshirt" />
@@ -83,14 +84,14 @@
                 <p>Orange Printed Tshirt</p>
                 <small>Price: $78.00</small>
                 <br />
-                <a href="#">Remove</a>
+                <button class="remove">Remove</a></button>
               </div>
             </div>
           </td>
-          <td><input type="number" value="1" /></td>
-          <td>$78.00</td>
+          <td><input class="quantity" type="number" value="1" /></td>
+          <td class="price">$78.00</td>
         </tr>
-        <tr>
+        <tr class="cart-row">
           <td>
             <div class="cart-info">
               <img src="img/products/f5.jpg" alt="Tshirt" />
@@ -98,20 +99,21 @@
                 <p>Orange Printed Tshirt</p>
                 <small>Price: $78.00</small>
                 <br />
-                <a href="#">Remove</a>
+                <button class="remove">Remove</a></button>
               </div>
             </div>
           </td>
-          <td><input type="number" value="1" /></td>
-          <td>$78.00</td>
+          <td><input class="quantity" type="number" value="1" /></td>
+          <td class="price">$78.00</td>
         </tr>
-      </table>
+      </div>  
+    </table>
 
       <div class="total-price">
         <table>
           <tr>
             <td>Subtotal</td>
-            <td>$234.00</td>
+            <td class="cart-subtotal-price">$234.00</td>
           </tr>
           <tr>
             <td>Tax</td>
@@ -119,7 +121,7 @@
           </tr>
           <tr>
             <td>Total</td>
-            <td>$269.00</td>
+            <td class="cart-total-price">$269.00</td>
           </tr>
         </table>
       </div>
