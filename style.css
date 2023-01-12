@@ -40,6 +40,8 @@ p {
 
 .section-p1 {
   padding: 40px 80px;
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation: fadeIn 2s ease-in-out;
 }
 
 .section-m1 {
@@ -1260,5 +1262,20 @@ th:last-child {
 
   .to-top {
     padding-right: 18px;
+  }
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
