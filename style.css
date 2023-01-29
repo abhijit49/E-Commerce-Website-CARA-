@@ -1262,3 +1262,7 @@ th:last-child {
     padding-right: 18px;
   }
 }
+a{
+  text-decoration: none;
+  color: white;
+}
